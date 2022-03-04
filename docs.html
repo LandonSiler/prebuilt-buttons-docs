@@ -1,0 +1,51 @@
+<div style="padding:0 2rem;">
+    <div>
+        <h2>Usage:</h2>
+    </div>
+    <div style="background-color:rgba(200,200,200,.2);padding:1rem;">
+        <p>Inside the sheet portal edit or create the <a href="https://docs.casualos.com/docs/tags">Tag</a> with the name of a listening event</p>
+        <p>If you intend to use the bot as a button you're best off with the <a href="https://docs.casualos.com/docs/listen-tags/#onclick">onClick</a> tag</p>
+        <p>If you have knowledge of JavaScript, onClick is essentially a callback</p>
+        <p>e.g Everytime a bot is clicked the onClick is fired for the bot that was clicked and that bot only</p>
+        <p>Inside the text editor for the listening event you chose, write the code for the button!</p>
+        <p>Example:</p>
+        <img src="https://builder-ltm-files.s3.amazonaws.com/89836eb15184fb8eebb9d2a1f6971ef4a6794c8efb54f4372c03f9a5e640a71f.png" style="height:18rem;"/>
+        <div style="background-color:rgba(17,19,31,.6);color:rgb(255,255,255);padding:.5rem 1rem;margin:2rem 1rem 1rem;">
+            <h3 style="border-left:.2rem solid rgb(242,250,12);border-top:.2rem solid rgb(242,250,12);color:rgb(242,250,12);padding-left:.5rem">Note</h3>
+            <p>If you're unfamiliar; all of the code / tag editing is done within the sheet portal</p>
+            <p>External: <a href='${sheetPortal}' target='sheets'>Sheet Portal</a> Internal: <a href='${sheetPortal}'>Sheet Portal</a></p>
+            <p>Common problem: Make sure you click the @ icon in the upper right of the editor to enable the script<p>
+        </div>
+    </div>
+    <div>
+        <h2>Creating More Buttons:</h2>
+    </div>
+    <p>To get more buttons: clone an existing button using the following:</p>
+    <div style="background-color:rgba(200,200,200,.2);padding:1rem;">
+        <p>Create a <a href="https://www.w3schools.com/js/js_variables.asp">variable</a> named ButtonLabel and assign it to the label of the button you would like to change. Make sure you wrap the label in "" (double quotes) so it is in the form of a <a href="https://www.w3schools.com/jsref/jsref_obj_string.asp">string</a></p>
+        <code>
+        const ButtonLabel = "REPLACE WITH BUTTON LABEL";
+        </code>
+        <p>Call the <a href="https://docs.casualos.com/docs/actions/#createmods">create()</a> function </p>
+        <code>
+        create(getBot("label",ButtonLabel),{color:"black"});
+        </code>
+        <div style="background-color:rgba(17,19,31,.6);color:rgb(255,255,255);padding:.5rem 1rem;;margin:2rem 1rem 1rem;">
+            <h3 style="border-left:.2rem solid rgb(242,250,12);border-top:.2rem solid rgb(242,250,12);color:rgb(242,250,12);padding-left:.5rem">Note</h3>
+            <p>One line example</p>
+            <div style="background-color:rgba(200,200,200,.2);padding:1rem;">
+                <code>create(getBot("label","REPLACE WITH BUTTON LABEL"),{color:"black"});</code>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Problems?</h2>
+    </div>
+    <div style="background-color:rgba(200,200,200,.2);padding:1rem;">
+        <p>Ask the community!</p>
+        <a href="https://t.me/auxOverflow">Aux Overflow</a>
+    </div>
+    <div>
+      <p style="font-size:.1rem;color:rgba(200,200,200,.4);">Author: L.Siler | <a href="https://github.com/LandonSiler/prebuilt-buttons-docs">Github</a></p>
+    </div>
+</div>
